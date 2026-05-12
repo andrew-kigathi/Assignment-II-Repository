@@ -27,34 +27,93 @@
                 font-family: Segoe UI, sans-serif;
                 margin: 50px;
             }
+
+            .banner{
+                background-color: #f77f99ff;
+                text-align: center;
+                padding: 70px;
+                font-size: 50px;
+                font-family: Segoe UI;
+            }
+
+            .content{
+                float: left;
+                width: 70%;
+                padding: 20px;
+                flex: 7;
+            }
+
+            .row::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            .sidebar{
+                float: right;
+                width: 30%;
+                padding: 20px;
+                border-left: #373737ff 1px solid;
+                flex: 3;
+            }
+
+            .footer{
+                background-color: grey;
+                text-align: center;
+                padding: 70px;
+                margin-top: 10px;
+                float: bottom;
+            }
+
+            @media screen and (max-width: 600px) {
+                .content, .sidebar {
+                    width: 100%;
+                    float: none;
+                    border-bottom: #373737ff 1px solid;
+                }
+            }
         </style>
     </head>
     <body>
-        <h1><strong>Internet Terminologies</strong></h1>
-
-        <p>
-            This website provides definitions, explanations, and examples of various internet terminologies. Each page focuses on a specific term or concept related to the internet, offering insights into how they work and their significance in the digital world.
-                <br>
-                <br>
-            Click the links below to explore different internet terminologies:
-        </p>
-
-        <div class="nav">
-            <a href="www.html">1. World Wide Web</a>
-            <a href="tcp-ip.html">2. TCP/IP</a>
-            <a href="browsers.html">3. Web Browsers</a>
-            <a href="servers.html">4. Web Servers</a>
-            <a href="url.html">5. Uniform Resource Locator</a>
-            <a href="dns.html">6. Domain Name Server</a>
-            <a href="http.html">7. Hypertext Transfer Protocol</a>
-            <a href="intranet-extranet.html">8. Intranet and Extranet</a>
-            <a href="multitier-architecture.html">9. Multitier Architecture</a>
-            <a href="ftp.html">10. File Transfer Protocol</a>
-            <a href="html.html">11. Hypertext Markup Language</a>
-            <a href="web1.html">12. Web 1.0</a>
-            <a href="web2.html">13. Web 2.0</a>
-            <a href="web3.html">14. Web 3.0</a>
-            <a href="web4.html">15. Web 4.0</a>
+        <div class="banner">
+            <strong>PROJECT</strong>
         </div>
+        <div class="row">
+            <div class="sidebar">
+                <p>Sidebar, you can add any content here, such as links, images, or additional information related to the internet terminologies.</p>
+            </div>
+            <div class="content">
+                <h1><strong>Internet Terminologies</strong></h1>
+                <p>
+                    This website provides definitions, explanations, and examples of various internet terminologies. Each page focuses on a specific term or concept related to the internet, offering insights into how they work and their significance in the digital world.
+                        <br>
+                        <br>
+                    Click the links below to explore different internet terminologies:
+                </p>
+                <br>
+                <div class="nav">
+                    <a href="www.html">1. World Wide Web</a>
+                    <a href="tcp-ip.html">2. TCP/IP</a>
+                    <a href="browsers.html">3. Web Browsers</a>
+                    <a href="servers.html">4. Web Servers</a>
+                    <a href="url.html">5. Uniform Resource Locator</a>
+                    <a href="dns.html">6. Domain Name Server</a>
+                    <a href="http.html">7. Hypertext Transfer Protocol</a>
+                    <a href="intranet-extranet.html">8. Intranet and Extranet</a>
+                    <a href="multitier-architecture.html">9. Multitier Architecture</a>
+                    <a href="ftp.html">10. File Transfer Protocol</a>
+                    <a href="html.html">11. Hypertext Markup Language</a>
+                    <a href="web1.html">12. Web 1.0</a>
+                    <a href="web2.html">13. Web 2.0</a>
+                    <a href="web3.html">14. Web 3.0</a>
+                    <a href="web4.html">15. Web 4.0</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            footer
+        </div>
+
+
     </body>
 </html>
